@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/LorgioRoda/Discord-Bot-Supremacy-Guild#readme",
   "dependencies": {
+    "@discordjs/opus": "^0.5.3",
     "discord.js": "^12.5.3",
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.8.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
