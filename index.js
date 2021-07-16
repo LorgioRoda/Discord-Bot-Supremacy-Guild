@@ -93,7 +93,7 @@ async function execute(message, serverQueue) {
 function skip(message, serverQueue) {
   if (!message.member.voice.channel)
     return message.channel.send(
-      "Tienes que estar en un canal de voz para detener la musica!"
+      "Tienes que estar en un canal de voz!"
     );
   if (!serverQueue)
     return message.channel.send("There is no song that I could skip!");
