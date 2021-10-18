@@ -36,7 +36,7 @@ client.on("message", async (message) => {
     stop(message, serverQueue);
     return;
   } else {
-    message.channel.send("Pon un comando valido, PELOTUDO por eso siempre perdemos!");
+    message.channel.send("Comando invalido!");
   }
 });
 
@@ -46,7 +46,7 @@ async function execute(message, serverQueue) {
   const voiceChannel = message.member.voice.channel;
   if (!voiceChannel)
     return message.channel.send(
-      "Necesitas estar en un canal de voz, IMBECIL!"
+      "Necesitas estar en un canal de voz!"
     );
   const permissions = voiceChannel.permissionsFor(message.client.user);
   if (!permissions.has("CONNECT") || !permissions.has("SPEAK")) {
@@ -86,7 +86,7 @@ async function execute(message, serverQueue) {
     }
   } else {
     serverQueue.songs.push(song);
-    return message.channel.send(`${song.title} has been added to the queue 🍑colita!`);
+    return message.channel.send(`${song.title} has been added to the queue!`);
   }
 }
 
